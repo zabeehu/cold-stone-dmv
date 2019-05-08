@@ -22,7 +22,7 @@ background-image: linear-gradient(
     url("/images/bg-stone.jpg");
 	background-repeat:repeat, no-repeat;
 	background-position:center;
-	background-size:cover;
+	background-size:cover, cover;
 	}
 
 	@include mobile {
