@@ -1,16 +1,7 @@
 // Hero BG IMG
 
 .has-bg-img { 
-background-image: linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url("/images/coldstone-2-ice-cream.jpg"),
-    url("/images/bg-stone.jpg");
-	text-align: center;
-	background-repeat:repeat, no-repeat;
-	background-position:center;
-	background-size:contain;
+
 	min-height: 500px;
 
 	@include tablet {
