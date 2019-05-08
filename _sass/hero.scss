@@ -1,0 +1,103 @@
+// Hero BG IMG
+
+.has-bg-img { 
+background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("/images/coldstone-2-ice-cream.jpg"),
+    url("/images/bg-stone.jpg");
+	text-align: center;
+	background-repeat:repeat, no-repeat;
+	background-position:center;
+	background-size:contain;
+	min-height: 500px;
+
+	@include tablet {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("/images/ice-cream-4.jpg"),
+    url("/images/bg-stone.jpg");
+	background-repeat:repeat, no-repeat;
+	background-position:center;
+	background-size:cover;
+	}
+
+	@include mobile {
+	display:none;
+	}
+}
+// Hero Text Box
+
+.hero-text-box {
+	background-color: rgba(0, 0, 0, 0.55);
+	padding: 25px;
+	max-width: 450px;
+	margin-left: 35px;
+	margin-top: 40px; 
+	display: block;
+	text-align: left;
+	color: white;
+	border-radius: 4px;
+}
+
+.hero-img-title {
+	font-size: 2rem;
+	color: white;
+	font-weight: bold;
+}
+
+.hero-img-subtitle {
+	font-size: 1.2rem;
+	color: white;
+}
+
+// Mobile Hero
+.mobile-hero-img {
+	@include desktop {
+	display: none;
+	}
+	@include tablet {
+	display: none;
+	}
+}
+.mobile-has-bg-img {
+	background-image: url("/images/bg-stone.jpg");
+	background-repeat: repeat;
+	text-align: center;
+	position: relative;
+	display: none;
+
+	@include mobile{
+	display: inline-block;
+	}
+}
+.mobile-hero-title {
+	font-size:1.2rem;
+	color: white;
+	font-weight: bold;
+}
+.mobile-hero-subtitle {
+	font-size:.8rem;
+	color: white;
+}
+
+// Mobile Hero Button / Container
+
+.hero-container {
+  position: relative;
+  display: none;
+
+  @include mobile {
+  display: inline-block;
+  }
+}
+
+.is-mobile-hero {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}

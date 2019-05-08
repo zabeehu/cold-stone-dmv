@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+
+$red: #b52218;
+$red-invert: #fff;
+
+// 3. Set the derived variables
+
+$primary: $red;
+$primary-invert: $red-invert;
+
+$navbar-item-img-max-height: 4rem !default;
+
+$footer-padding: 3rem 1.5rem 3rem !default;
+
+// 4. Import the rest of Bulma
+
+@import "../node_modules/bulma/bulma";

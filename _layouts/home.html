@@ -1,0 +1,156 @@
+---
+title: Cold Stone DMV
+description: Cold Stone catering and information. Learn more about our 5 locations in the DMV area.
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+<section class="hero has-bg-img">
+  <div class="hero-body">
+    <div class="hero-text-box">
+      <h1 class="hero-img-title" >
+        Did You Know We Cater?
+      </h1>
+      <h2 class="hero-img-subtitle">
+        Make your next party memorable with something everybody loves: Cold Stone Creamery®!
+      </h2>
+      <br>
+      <button onclick="window.location.href = '/catering';" class="button is-primary is-large">Learn More</button>
+    </div>
+  </div>
+</section>
+<section>
+<div class="hero mobile-has-bg-img">
+	<div class="hero-container">
+	<img src="/images/ice-cream-4.jpg">
+	<button onclick="window.location.href = '/catering';" class="button is-primary is-mobile-hero">Learn More</button>
+</div>
+
+
+	<div class="hero-body" style="padding: 15px;">
+		<h1 class="mobile-hero-title">Did You Know We Cater? </h1>
+		<h2 class="mobile-hero-subtitle">Make your next party memorable with something everybody loves: Cold Stone Creamery®!</h2>
+		<div style="padding-top:7px;">
+
+	</div>
+	</div>
+</div>
+</section>
+
+<section class="section" style="background-image: url(/images/bg-white.jpg);">
+    <div class="container">
+      <h1 class="title">The Ultimate Ice Cream Experience</h1>
+      <h2 class="subtitle">
+        Our ice cream is freshly made in each of our 5 locations in the DMV area, using natural dairy and the finest ingredients.
+      </h2>
+      <hr>
+      <div class="columns" style="text-align: center;">
+  <div class="column">
+  	<img id="cone" align="middle" src="/images/cone.png"><br>
+  	<h2 style="font-size:2rem;">Ice Cream</h2>
+    Experience the best we have to offer, the way you want
+  </div>
+  <div class="column">
+    <img id="cake" align="middle" src="/images/cake.png"><br>
+  	<h2 style="font-size:2rem;">Cakes and Pies</h2>
+    Moist, luscious cakes layered with ice cream, mix-ins, and frosting
+  </div>
+  <div class="column">
+    <img id="cater" align="middle" src="/images/cater.png"><br>
+  	<h2 style="font-size:2rem;">Catering</h2>
+    The ultimate ice cream experience at the comfort of your event
+  </div>
+  <div class="column">
+    <img id="fundraising" align="middle" src="/images/fundraising.png"><br>
+  	<h2 style="font-size:2rem;">Fundraising</h2>
+    We help raise money for your school the most delicious way possible
+  </div>
+</div>
+     </div>
+ </section>
+
+<div style="background-image: url(/images/bg-white.jpg);">
+
+	<img src="/images/coldstone-family.jpg">
+
+<section class="section">
+
+<!-- Form -->
+    <div class="container">
+
+<div style="max-width: 600px; text-align: center; margin: auto; padding-bottom: 25px;">
+      <h1 class="title">
+        Let us cater your next event
+      </h1>
+      <h2 class="subtitle">
+        We provide services for corporate events, weddings, baby showers, fundraisers, graduation parties, and more. <a href="/catering">Learn more</a>
+      </h2>
+  </div>
+
+
+
+<form class="form" name="coldstonedmv-home-form" method="POST" data-netlify="true">
+
+<img style="height: 75px; width: auto; margin: auto; text-align: center; display: block;" src="/images/logo1.png">
+
+
+<div class="field">
+  <label class="label">Name</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Your Name">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Email</label>
+  <div class="control">
+    <input class="input" type="email" placeholder="Your Email">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Phone</label>
+  <div class="control">
+    <input class="input" type="tel" placeholder="Your Phone Number">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Message</label>
+  <div class="control">
+    <textarea class="textarea" placeholder="Your Message"></textarea>
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button type="submit" class="button is-primary is-large">Book Event</button>
+  </div>
+</div>
+
+
+
+
+</form>
+</div>
+</section>
+<!-- End Form -->
+
+	
+
+</div>
+        {{ content }}
+
+    {%- include footer.html -%}
+
+	<script src="/assets/js/main.js"> </script>
+  </body>
+
+</html>
