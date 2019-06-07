@@ -23,7 +23,7 @@ twitter_username:
 github_username:  
 permalink: pretty
 
-google_analytics_key:
+google_analytics_key: UA-141661737-1
 
 sass:
   style: compressed
