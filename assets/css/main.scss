@@ -4,3 +4,15 @@
 @import "main";
 @import "hero";
 @import "form";
+
+
+.photo-gallery li {
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+	width: 33%;
+}
+
+.photo-gallery li img {
+	width: 100%;
+}

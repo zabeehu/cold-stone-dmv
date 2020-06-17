@@ -2,6 +2,12 @@
 layout: default
 title: Ice Cream Catering in DMV
 description: Book an event and let the ultimate ice cream exprience come to you. We offer a variety of services and products to fit your needs. Check it out.
+mainimages:
+  - image_path: /images/catering/1.jpg
+  - image_path: /images/catering/2.jpg
+  - image_path: /images/catering/3.jpg
+  - image_path: /images/catering/4.jpg
+
 ---
 <div style="background-image: url(/images/bg-white.jpg);">
 
@@ -126,9 +132,33 @@ description: Book an event and let the ultimate ice cream exprience come to you.
   </div>
 </section>
 
+<!--<section class="section">
+    <div class="container">
+<ul class="photo-gallery">
+  {% for image in page.images %}
+    <li><img src="{{ image.image_path }}" alt="{{ image.title}}"/></li>
+  {% endfor %}
+</ul>
+</div>
+
+
+</section> -->
+
 <section class="section">
-	<div class="columns">
-	</div>
+  <div class="container">
+
+  <div class="columns">
+    {% for image in page.mainimages %}
+      <div class="column">
+    <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+      </div>
+  {% endfor %}
+
+</div>
+
+</div>
+  
+</section>
 	
 </div>
 
