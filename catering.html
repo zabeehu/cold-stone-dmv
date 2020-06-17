@@ -75,7 +75,7 @@ mainimages:
 <!-- End Form -->
 
 <div class="column">
-	<img src="/images/catering-1.jpg">
+	<img class="lozad" data-src="/images/catering-1.jpg">
 </div>
 
 </div>
@@ -150,7 +150,7 @@ mainimages:
   <div class="columns">
     {% for image in page.mainimages %}
       <div class="column">
-    <img class="lozad" data-src="{{ image.image_path }}" alt="{{ image.title}}"/>
+    <img class="lozad" src="" data-src="{{ image.image_path }}" alt="{{ image.title}}"/>
       </div>
   {% endfor %}
 
