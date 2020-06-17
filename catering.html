@@ -150,7 +150,7 @@ mainimages:
   <div class="columns">
     {% for image in page.mainimages %}
       <div class="column">
-    <img src="{{ image.image_path }}" alt="{{ image.title}}"/>
+    <img class="lozad" data-src="{{ image.image_path }}" alt="{{ image.title}}"/>
       </div>
   {% endfor %}
 
@@ -161,6 +161,11 @@ mainimages:
 </section>
 	
 </div>
+
+<script type="text/javascript">
+  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+</script>
 
 
 
