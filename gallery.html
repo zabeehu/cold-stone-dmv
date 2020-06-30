@@ -1,0 +1,66 @@
+---
+layout: default
+title: Event Gallery
+description: A gallery of our ice cream catering events
+column1:
+  - image_path: /images/catering/1.jpg
+  - image_path: /images/catering/2.jpg
+  - image_path: /images/catering/3.jpg
+column2:
+  - image_path: /images/catering/4.jpg
+  - image_path: /images/event/5.jpg
+  - image_path: /images/event/6.jpg
+column3:
+  - image_path: /images/event/7.jpg
+  - image_path: /images/event/8.jpg
+  - image_path: /images/event/9.jpg
+
+---
+<div style="background-image: url(/images/bg-white.jpg);">
+
+<section class="hero is-primary is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-2">
+        Event Gallery
+      </h2>
+      <p class="subtitle">
+        See photos of our events and picture your own event with the best ice cream!
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+  <div class="columns">
+      <div class="column" style="padding: .2rem;">
+    {% for image in page.column1 %}
+    <img class="lozad" src="" data-src="{{ image.image_path }}" alt="{{ image.title}}"/>
+  {% endfor %}
+</div>
+      <div class="column" style="padding: .2rem;">
+    {% for image in page.column2 %}
+    <img class="lozad" src="" data-src="{{ image.image_path }}" alt="{{ image.title}}"/>
+  {% endfor %}
+</div>
+      <div class="column" style="padding: .2rem;">
+    {% for image in page.column3 %}
+    <img class="lozad" src="" data-src="{{ image.image_path }}" alt="{{ image.title}}"/>
+  {% endfor %}
+</div>
+
+</div>
+  
+</section>
+	
+</div>
+
+<script type="text/javascript">
+  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+</script>
+
+
+
